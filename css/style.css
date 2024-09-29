@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+
+
+
+html, body {
+    height: 100%; /* Asegúrate de que el body ocupa toda la altura */
+    margin: 0; /* Elimina el margen por defecto */
+    
+}
+
+#contenedor-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas para los contenedores de arriba */
+    width: 80%; /* O el tamaño que desees */
+    height: 100%; /* O el tamaño que desees */
+    justify-content: center;
+    max-width: 1200px; /* Para evitar que sea demasiado ancho */
+    height: auto; /* O el tamaño que desees */
+    margin: auto; /* Para centrar en la página */
+    background-color: #f1e0db;
+    margin-top: 10px;
+}
+
+
+#contenedor-1,
+#contenedor-2 {
+    /* border: 1px solid black;   */
+}
+
+
+#contenedor-3 {
+    grid-column: 1 / -1; 
+    /* border: 1px solid coral; */
+}
+
+#contenedor-4 {
+    grid-column: 1 / -1; 
+    /* border: 1px solid darkgoldenrod; */
+}
+
+#contenedor-1 img {
+    width: 100%;
+}
+
+#carrusel{
+    height: 300px;
+    height: 600px;
+}
+
+#contenedor-2{
+    justify-content: center;
+    height: 200px;
+    margin: auto; 
+}
+
+#contenedor-2 #btnQuiero{
+    justify-content: center;
+    height: 80px;
+    width: 150px;
+    padding-top: 15px;
+    margin-left: 50px;
+}
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    #contenedor-principal {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    }
+}
+
+.frank-ruhl-libre-uniquifier {
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
